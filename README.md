@@ -15,3 +15,9 @@ cd Lingvo
 
 Запустить сервер:
 Python manage.py runserver
+
+Записать в файл список всех установленных пакетов:
+pip freeze > requirements.txt
+
+Установить все зависимости из requirements.txt:
+pip install -r requirements.txt
