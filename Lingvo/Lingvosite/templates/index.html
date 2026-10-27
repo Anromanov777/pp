@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Языковой портал</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<h1>Делай с нами, делай лучше нас!!!</h1>
+<div>
+    <button>Записаться на бесплатный урок</button>
+</div>
+<h3>Преимущества школы:</h3>
+<ul>
+    <li>Быстро</li>
+    <li>Качественно</li>
+    <li>Ёмко</li>
+    <li>Дешево</li>
+</ul>
+<div class="slider">
+    <div class="slides-container">
+        <div class="slide">
+            <div><label>Имя:</label><span>Иван</span></div>
+            <div><label>Отзыв:</label><span>Мне очень понравилось</span></div>
+        </div>
+        <div class="slide">
+            <div><label>Имя:</label><span>Настя</span></div>
+            <div><label>Отзыв:</label><span>Круто!!!</span></div>
+        </div>
+        <div class="slide">
+            <div><label>Имя:</label><span>Марина</span></div>
+            <div><label>Отзыв:</label><span>Это лучшая школа</span></div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/slider.js' %}"></script>
+</body>
+</html>
