@@ -7,37 +7,51 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-<h1>Делай с нами, делай лучше нас!!!</h1>
-<div>
-    <button>Записаться на бесплатный урок</button>
-</div>
-<h3>Преимущества школы:</h3>
-<ul>
-    <li>Быстро</li>
-    <li>Качественно</li>
-    <li>Ёмко</li>
-    <li>Дешево</li>
-</ul>
-<div class="slider">
-    <div class="slides-container">
-        <div class="slide">
-            <div><label>Имя:</label><span>Иван</span></div>
-            <div><label>Отзыв:</label><span>Мне очень понравилось</span></div>
-        </div>
-        <div class="slide">
-            <div><label>Имя:</label><span>Настя</span></div>
-            <div><label>Отзыв:</label><span>Круто!!!</span></div>
-        </div>
-        <div class="slide">
-            <div><label>Имя:</label><span>Марина</span></div>
-            <div><label>Отзыв:</label><span>Это лучшая школа</span></div>
-        </div>
-        <div class="slide">
-            <div><label>Имя: </label><span>Лера</span></div>
-            <div><label>Отзыв:</label><span>Ура! Я знаю китайский!</span></div>
+<main>
+    <h1>Делай с нами, делай лучше нас!!!</h1>
+    <div>
+        <button>Записаться на бесплатный урок</button>
+    </div>
+    <h3>Преимущества школы:</h3>
+    <ul>
+        <li>Быстро</li>
+        <li>Качественно</li>
+        <li>Ёмко</li>
+        <li>Дешево</li>
+    </ul>
+    <div class="slider">
+        <div class="slides-container">
+            <div class="slide">
+                <div><label>Имя:</label><span>Иван</span></div>
+                <div><label>Отзыв:</label><span>Мне очень понравилось</span></div>
+            </div>
+            <div class="slide">
+                <div><label>Имя:</label><span>Настя</span></div>
+                <div><label>Отзыв:</label><span>Круто!!!</span></div>
+            </div>
+            <div class="slide">
+                <div><label>Имя:</label><span>Марина</span></div>
+                <div><label>Отзыв:</label><span>Это лучшая школа</span></div>
+            </div>
+            <div class="slide">
+                <div><label>Имя: </label><span>Лера</span></div>
+                <div><label>Отзыв:</label><span>Ура! Я знаю китайский!</span></div>
+            </div>
         </div>
     </div>
-</div>
+    <div style="text-align: center; margin-top:50px;">
+        <a style="padding: 15px 30px;
+        background-color: blue;
+        color: white;
+        font-size:xx-large;
+        border-radius: 10px;
+        text-decoration:none"
+        href="/course">Курсы</a>
+    </div>
+</main>
+<footer>
+    <div>адрес, телефон, адрес электронной почты</div>
+</footer>
 <script src="{% static 'js/slider.js' %}"></script>
 </body>
 </html>
