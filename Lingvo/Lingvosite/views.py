@@ -5,3 +5,6 @@ from django.shortcuts import render
 def index(r):
     return render(r, 'index.html')
 
+def course(r):
+    return render(r, 'course.html')
+
