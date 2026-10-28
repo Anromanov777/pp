@@ -21,5 +21,6 @@ from Lingvosite import views
 urlpatterns = [
     path('', views.index),
     path('course/', views.course),
+    path('calc',views.calc),
     path('admin/', admin.site.urls),
 ]
