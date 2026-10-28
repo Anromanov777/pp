@@ -6,6 +6,9 @@ File → Settings → Project → Python Interpreter, → Add → Existing envir
 Установить все зависимости из requirements.txt:
 pip install -r requirements.txt
 
+Запустить сервер:
+Python manage.py runserver
+
 Создать виртуальное окружение (если его ещё нет):
 python -m venv .venv
 
@@ -21,8 +24,7 @@ python -m django --version
 Перейти в папку проекта:
 cd Lingvo
 
-Запустить сервер:
-Python manage.py runserver
+
 
 Записать в файл список всех установленных пакетов:
 pip freeze > requirements.txt
