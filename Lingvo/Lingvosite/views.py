@@ -13,3 +13,6 @@ def course(r):
 
 def calc(r):
     return render(r, 'calc.html')
+
+def urok(r):
+    return render(r, 'urok.html')

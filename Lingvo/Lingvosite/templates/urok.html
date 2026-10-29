@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Языковой портал</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<main>
+    <div>
+        <a href="/">На главную</a>
+        <a href="/course">На курсы</a>
+    </div>
+    <h1>Запись на бесплатный урок</h1>
+    <form>
+        ФИО: <input type="text" required><br>
+        Телефон: <input type="tel" placeholder="+7(XXX)XXX-XX-XX" pattern="/+/7(d" required><br>
+        Почта: <input type="email" required><br>
+        <select id="course">
+            <option value="0">Английский язык</option>
+            <option value="1">Китайский язык</option>
+        </select><br>
+        <input type="submit">
+    </form>
+
+</main>
+<footer>
+    <div>адрес, телефон, адрес электронной почты</div>
+</footer>
+</body>
+</html>
