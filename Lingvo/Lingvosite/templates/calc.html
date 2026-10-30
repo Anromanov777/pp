@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Калькулятор курсов</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-<main>
-        <div>
+    <main>
+    <div>
         <a href="/">На главную</a>
-    </div>
-        <div class="buttons">
         <a href="/course">Курсы</a>
     </div>
     <h1>Калькулятор курсов</h1>
-</main>
-<footer>
-    <div>адрес, телефон, адрес электронной почты</div>
-</footer>
-<script src="{% static 'js/calc.js' %}"></script>
+    <h3>Выберите курс:</h3>
+    <select id="course">
+        <option value="0">Английский язык</option>
+        <option value="1">Китайский язык</option>
+        <option value="2">Итальянский язык</option>
+        <option value="3">Испанский язык</option>
+    </select>
+    <br>
+    <br>
+    Количество занятий: <input id="count" type="Number" min="8" max="15" value="8">
+    <br>
+    <br>
+    Тариф:<br>
+    <input name="tariff" type="radio" value="0">Выгодный: Дешевле, но без отмен и переносов.<br>
+    <input name="tariff" type="radio" value="1">Комфортный: Дороже, но можно отменять уроки.<br>
+    <input name="tariff" type="radio" value="2" checked>Усиленный: избранные преподаватели и сопровождение методиста.<br>
+    <br>
+    <br>
+    <button id="rasch">Рассчитать</button> <span id="result">Нажмите расчет</span>
+    </main>
+    <footer>
+        <div>адрес, телефон, адрес электронной почты.</div>
+    </footer>
+    <script src="{% static 'js/calc.js' %}"></script>
 </body>
 </html>

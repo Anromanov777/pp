@@ -7,10 +7,10 @@ File → Settings → Project → Python Interpreter, → Add → Existing envir
 pip install -r requirements.txt
 
 Запустить сервер:
-Python manage.py runserver
+.python manage.py runserver
 
 Создать виртуальное окружение (если его ещё нет):
-python -m venv .venv
+.venv\Scripts\activate
 
  Активировать его:
 .venv\Scripts\activate
